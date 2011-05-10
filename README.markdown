@@ -20,6 +20,8 @@ In your browser
 With Ender
 --------
 
+`ender -b qwery,pub-mix`
+
 ### Using a selector engine
 `var ns = {}`
 
@@ -51,6 +53,7 @@ Run the tests
 =============
 
 `npm install zap`
+
 `zap test.js`
 
 
