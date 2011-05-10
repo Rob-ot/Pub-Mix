@@ -9,19 +9,19 @@ Usage
 In your browser
 ---------------
 
-### Bind custom events to window
-PubMix.on(window, "userStateChanged", function (user) { console.log("The user is now ", user.name) })
+### Bind custom events to any object
+`PubMix.on(window, "userStateChanged", function (user) { console.log("The user is now ", user.name); })`
 
 .. later
 
-PubMix.fire(window, "userStateChanged", [{name: "Rob"}])
+`PubMix.fire(window, "userStateChanged", [{name: "Rob"}])`
 
 
 With Ender
 --------
 
 ### Using a selector engine
-var ns = {}
+`var ns = {}
 
 function handleClickedCell () {
 
@@ -35,25 +35,25 @@ $(ns).off("cellClicked", handleClickedCell)
 
 ### Directly from ender or $
 
-PubMix.on(ns, "anything", function(){})
+`$.on(ns, "anything", function(){})`
 
 
 From node
 --------
 
-npm install pub-mix
+`npm install pub-mix`
 
 var pubmix = require("pub-mix")
 
-pubmix.on(anything, "something", function(){})
+pubmix.on(anything, "something", function(){})`
 
 
 
 Run the tests
 =============
 
-npm install zap
-zap test.js
+`npm install zap`
+`zap test.js`
 
 
 
@@ -61,13 +61,13 @@ Some Docs
 =========
 
 ### Bind an event listener
-PubMix.on(namespace, eventName, function)
+`PubMix.on(namespace, eventName, function)`
 
 ### Trigger an event listener
-PubMix.fire(namespace, eventName[, [arg1, arg2, ...]])
+`PubMix.fire(namespace, eventName[, [arg1, arg2, ...]])`
 
 ### Unbind an event listener
-PubMix.off(namespace, eventName, function)
+`PubMix.off(namespace, eventName, function)`
 
 ### No Conflict
-var myNamedPubMix = PubMix.noConflict()
+`var myNamedPubMix = PubMix.noConflict()`
