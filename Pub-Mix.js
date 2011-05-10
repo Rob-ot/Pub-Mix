@@ -1,7 +1,8 @@
 /* 
+ * Pub Mix
  * Copyright (c) 2011 Rob Middleton
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ * https://github.com/Rob-ot/Pub-Mix
 */
 
 !function () {
