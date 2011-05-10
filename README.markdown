@@ -52,7 +52,7 @@ From node
 Run the tests
 =============
 
-`npm install zap`
+`sudo npm install --global zap`
 
 `zap test.js`
 
