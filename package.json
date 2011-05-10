@@ -1,0 +1,13 @@
+{
+  "name": "pub-mix",
+  "description": "A simple custom events micro-framework",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Rob-ot/Pub-Mix",
+  "authors": ["Rob Middleton"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Rob-ot/Pub-Mix.git"
+  },
+  "main": "./Pub-Mix.js",
+  "ender": "./ender.js"
+}
