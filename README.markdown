@@ -21,17 +21,15 @@ With Ender
 --------
 
 ### Using a selector engine
-`var ns = {}
+`var ns = {}`
 
-function handleClickedCell () {
+`function handleClickedCell () {}`
 
-}
+`$(ns).on("cellClicked", handleClickedCell)`
 
-$(ns).on("cellClicked", handleClickedCell)
+`$(ns).fire("cellClicked")`
 
-$(ns).fire("cellClicked")
-
-$(ns).off("cellClicked", handleClickedCell)
+`$(ns).off("cellClicked", handleClickedCell)`
 
 ### Directly from ender or $
 
@@ -43,9 +41,9 @@ From node
 
 `npm install pub-mix`
 
-var pubmix = require("pub-mix")
+`var pubmix = require("pub-mix")`
 
-pubmix.on(anything, "something", function(){})`
+`pubmix.on(anything, "something", function(){})`
 
 
 
